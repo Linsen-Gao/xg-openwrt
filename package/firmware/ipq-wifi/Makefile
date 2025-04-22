@@ -6,9 +6,9 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL=$(PROJECT_GIT)/project/firmware/qca-wireless.git
-PKG_SOURCE_DATE:=2025-04-08
-PKG_SOURCE_VERSION:=9591c9b7578af3548c35bb80cd6c37978669f7c9
-PKG_MIRROR_HASH:=b5c0024a0c0ebeb61ad6bc037f897685d161f1578aca5a1366dd33603661338b
+PKG_SOURCE_DATE:=2025-04-15
+PKG_SOURCE_VERSION:=38a18dc26c9b150f06f56b9c5972d789eb5bc0c4
+PKG_MIRROR_HASH:=a10a9b524ecd91854265b04819303410ae77e1f5a093f9cc8eb43e25e99c1bae
 PKG_FLAGS:=nonshared
 
 include $(INCLUDE_DIR)/package.mk
@@ -40,6 +40,7 @@ ALLWIFIBOARDS:= \
 	edimax_cax1800 \
 	glinet_gl-ax1800 \
 	glinet_gl-axt1800 \
+	glinet_gl-b3000 \
 	linksys_homewrk \
 	linksys_mr5500 \
 	linksys_mr7350 \
@@ -189,6 +190,7 @@ $(eval $(call generate-ipq-wifi-package,edgecore_eap102,Edgecore EAP102))
 $(eval $(call generate-ipq-wifi-package,edimax_cax1800,Edimax CAX1800))
 $(eval $(call generate-ipq-wifi-package,glinet_gl-ax1800,GL.iNet GL-AX1800))
 $(eval $(call generate-ipq-wifi-package,glinet_gl-axt1800,GL.iNet GL-AXT1800))
+$(eval $(call generate-ipq-wifi-package,glinet_gl-b3000,GL.iNet GL-B3000))
 $(eval $(call generate-ipq-wifi-package,linksys_homewrk,Linksys HomeWRK))
 $(eval $(call generate-ipq-wifi-package,linksys_mr5500,Linksys MR5500))
 $(eval $(call generate-ipq-wifi-package,linksys_mr7350,Linksys MR7350))
